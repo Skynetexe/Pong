@@ -1,0 +1,26 @@
+@keyframes blueToRed {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(60deg, #0000ff, #ff0000);
+    background-size: 200% 200%;
+    animation: blueToRed 20s infinite;
+  }
+  
+  canvas {
+    border: 3px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
